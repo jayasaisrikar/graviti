@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import GoogleMapReact from 'google-map-react';
 import axios from 'axios';
-import Grid from './Grid';
+import GoogleMapReact from 'google-map-react';
+import React, { useState } from 'react';
 
 const apiKey = 'AIzaSyAYBivEevsC3sXYWfY6n9803tvASqB0TUI'; // Replace with your Google Maps API key
 
@@ -33,13 +32,13 @@ const MapBox = () => {
   };
 
   // Function to handle search
-  const handleSearch = async (query) => {
+/*  const handleSearch = async (query) => {
     const location = await fetchLocation(query);
     if (location) {
       setMapCenter({ lat: location.lat, lng: location.lng });
       setMapZoom(15); // Adjust zoom level as needed
     }
-  };
+  };*/
 
   return (
     <div className="container">
